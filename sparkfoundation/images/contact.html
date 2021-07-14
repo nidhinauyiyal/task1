@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+   /* background-color: rgba(151, 195, 253, 0.918);*/
+    background-image: url("images/cont1.jpg");
+    color:rgba(11, 35, 66, 0.918); ;
+    margin:0;
+}
+nav{
+    height: 15vh;
+    width: auto;
+    background-color: rgb(153, 64, 153);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+header{
+    height: 95vh;
+overflow: hidden;
+background-image: url("cont1.jpg");
+}
+
+.form{
+    margin-left: 1%;
+    margin-top: 4%;
+    text-align: center;
+    width: 340px; height: 440px; background:rgb(198, 218, 248);; /*#e6e6e6;*/ border-radius: 8px; box-shadow: 0 0 40px -10px #000; margin: calc(50vh -220px auto);
+    padding: 20px 30px; max-width: calc(100vw -40px); box-sizing: border-box; font-family: 'montserrat' , sans-serif; position: relative;}
+    button:hover{background: #78788c; color:powderblue;}
+input[type=text],input[type=email],input[type="textarea"]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border:1px solid white;
+    box-sizing: border-box;
+    
+}
+
+.row{
+  max-width: 1180px;
+  margin: auto;
+
+}
+.logo{
+    height: 90px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+ .mainnav{
+     float: right;
+     margin-top: 40px;
+ }
+ .mainnav li{
+     display: inline-block;
+     list-style: none;
+     margin-left: 30px;
+    
+    
+ }
+ a{
+     
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-family: PT Serif;
+     font-weight: 90%;
+     font-size: 20px;
+     padding: 7px 14px;
+     margin: 0 0;
+ }
+
+
+
+ a.active{
+    background-color:rgb(255, 21, 204);
+ }
+ a:hover{
+     background-color:rgb(255, 21, 204);
+     transition: .5s;
+ }
+
+ footer{
+    height:5vh;
+    background-color: rgb(153, 64, 153);
+ width:auto; 
+ bottom: 0;
+ 
+}
+footer h5{
+    text-align: center;
+    margin-top: 3px;
+}
+
+.colorchange{
+    animation:colorchangespark 1s infinite;
+
+}
+@keyframes colorchangespark{
+    0%{
+color:rgb(153, 64, 153);
+    }
+    25%{
+        color:rgb(153, 64, 153);
+    }
+    50%{
+        color:rgb(241, 11, 11);
+    }
+    75%{
+        color:rgba(45, 26, 218, 0.815);
+        
+    }
+    100%{
+        color:rgba(0, 128, 0, 0.671);
+    }
+}
+       .aside{
+           height: 20%;
+           width: auto;
+           float: right;
+           background-color: blue;
+       }
+    
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="row">
+      <img src="logo.png" class="logo" >
+    
+    <ul class="mainnav"><li><a href="index.html" >home</a></li>
+    <li><a href="contact.html" class="active"> contactus</a></li>
+    <li><a href="about.html">aboutus</a></li>
+    <li><a href="donate.html">donation</a></li></ul>
+        </div>
+        </nav>  
+    
+      
+    
+    
+    
+    <form class="form">
+    <h2><marquee>Feel Free To Contact Us.&nbsp;&nbsp;Feel Free To Contact Us.&nbsp;&nbsp;Feel Free To Contact Us. &nbsp;&nbsp;Feel Free To Contact Us.&nbsp;&nbsp;Feel Free To Contact Us.
+        &nbsp;&nbsp;Feel Free To Contact Us.&nbsp;&nbsp;Feel Free To Contact Us.&nbsp;&nbsp;Feel Free To Contact Us.&nbsp;&nbsp;Feel Free To Contact Us.&nbsp;&nbsp;Feel Free To Contact Us.&nbsp;&nbsp;Feel Free To Contact Us.
+    </marquee> </h2>
+    <label>Name</label><input type="text" name="name"
+    placeholder="Enter your name"></br>
+    <label>Email</label><input type="email" name="email"
+    placeholder="Enter your email"></br>
+<labele>Message</labele><textarea name="message" id="message" placeholder="enter message here.." style="width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+border:1px solid white;
+box-sizing: border-box;
+"></textarea>
+    <button>Send Message</button>
+</form>
+
+</header>
+
+<footer>
+    <h5>@Copyright <span class="colorchange">Spark</span> Foundation</h5>
+</footer>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

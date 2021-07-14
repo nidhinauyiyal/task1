@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <link rel="stylesheet" href="style.css">-->    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;}
+            nav{
+    height: 15vh;
+    width: auto;
+    background-color: rgb(153, 64, 153);
+    overflow: hidden;
+}
+header{
+
+background-image:url("pic4.jpg");
+width:auto;
+    position: relative;
+    height: 95vh;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: PT Serif;
+    overflow: hidden;
+}
+            .row{
+  max-width: 1180px;
+  margin: auto;
+
+}
+.logo{
+    height: 75px;
+    width: auto;
+    float: left;
+    margin-top: 15px;
+}
+ .mainnav{
+     float: right;
+     margin-top: 40px;
+ }
+ .mainnav li{
+     display: inline-block;
+     list-style: none;
+     margin-left: 30px;
+    
+    
+ }
+ a{
+     
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-family: PT Serif;
+     font-weight: 90%;
+     font-size: 20px;
+     padding: 7px 14px;
+     margin: 0 0;
+ }
+
+
+
+ a.active{
+    background-color:rgb(255, 21, 204);
+ }
+ a:hover{
+     background-color:rgb(255, 21, 204);
+     transition: .5s;
+    }
+
+    footer{
+    height: 5vh;
+    background-color: rgb(153, 64, 153);
+ width:auto; 
+ bottom: 0;
+
+}
+footer h5{
+    text-align: center;
+    margin-top: 4px;
+}
+.colorchange{
+    animation:colorchangespark 1s infinite;
+
+}
+@keyframes colorchangespark{
+    0%{
+color:rgb(153, 64, 153);
+    }
+    25%{
+        color:rgb(153, 64, 153);
+    }
+    50%{
+        color:rgb(241, 11, 11);
+    }
+    75%{
+        color:rgba(45, 26, 218, 0.815);
+        
+    }
+    100%{
+        color:rgba(0, 128, 0, 0.671);
+    }
+}
+form{
+margin-top: 25%;
+margin-left: 45%;
+}
+    </style>
+</head>
+
+<body>
+    <header>    <nav>
+        <div class="row">
+      <img src="logo.png" class="logo" >
+    
+    <ul class="mainnav"><li><a href="index.html">home</a></li>
+    <li><a href="contact.html"> contactus</a></li>
+    <li><a href="about.html">aboutus</a></li>
+    <li><a href="donate.html" class="active">donation</a></li></ul>
+        </div>
+        </nav>
+    
+    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HYtbBVoZqsN5ps" async> </script> </form>
+       </form>
+</header>
+<footer>
+    <h5>@Copyright <span class="colorchange">Spark</span> Foundation</h5>
+</footer>
+</body>
+</html>

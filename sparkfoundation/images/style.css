@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    overflow:hidden;
+}
+header{
+    width:auto;
+    position: relative;
+    height: 95vh;
+    background-image:url("wal.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family: PT Serif;
+   /* font-family: 'Flamenco', cursive;*/
+    
+}
+.row{
+  max-width: 1180px;
+  margin: auto;
+
+}
+.logo{
+    height: 90px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+ .mainnav{
+     float: right;
+     margin-top: 40px;
+ }
+ .mainnav li{
+     display: inline-block;
+     list-style: none;
+     margin-left: 30px;
+    
+    
+ }
+ a{
+     
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-family: PT Serif;
+     font-weight: 90%;
+     font-size: 20px;
+     padding: 7px 14px;
+     margin: 0 0;
+ }
+
+
+
+ a.active{
+    background-color:rgb(153, 64, 153);
+ }
+ a:hover{
+     background-color:rgb(153, 64, 153);
+     transition: .5s;
+ }
+
+ .maincont{
+     width: auto;
+     position: relative;
+     left: 30%;
+     top:25%;
+ }
+ 
+.maincont h1{
+   
+color: #fff;
+letter-spacing: 3px;
+ }
+ 
+.btn{
+    position: relative;
+    left:15%;
+    padding: 10px 30px;
+
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition:background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn1{
+    background-color: transparent;
+    color:#fff;
+    
+
+} 
+.colorchange{
+    animation:colorchangespark 1s infinite;
+
+}
+@keyframes colorchangespark{
+    0%{
+color:rgb(153, 64, 153);
+    }
+    25%{
+        color:rgb(153, 64, 153);
+    }
+    50%{
+        color:rgb(241, 11, 11);
+    }
+    75%{
+        color:rgba(45, 26, 218, 0.815);
+        
+    }
+    100%{
+        color:rgba(0, 128, 0, 0.671);
+    }
+}
+footer{
+    height: 5vh;
+    background-color: rgb(153, 64, 153);
+ width:auto; 
+ bottom: 0;
+
+}
+footer h5{
+    text-align: center;
+    margin-top: 2px;
+}
